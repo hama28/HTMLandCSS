@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>自己紹介ページ</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="responsive.css">
     </head>
     <body>
         <header>
-
+            <div class="container">
+                <div class="header-left">
+                    <img class="logo" src="#">
+                </div>
+                <span class="fa fa-bars menu-icon"></span>
+                <div class="header-right">
+                    <a href="#">about</a>
+                    <a href="#">なんか</a>
+                    <a href="#">contact</a>
+                </div>
+            </div>
         </header>
-        <div>
-            <h1>HELLO WORLD</h1>
-            <p></p>
-            <h2>畑優</h2>
+        <div class="top-wrapper">
+            <div class="container">
+                <h1>HELLO 世界！</h1>
+                <p>自己紹介ページ</p>
+                <div class="btn-wrapper">
+                    <a href="#" class="btn signup">新規登録はこちら</a>
+                    <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
+                    <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
+                </div>
+            </div>
+        </div>
+        <div class="lesson-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>勉強中</h2>
+                </div>
+                <div class="lessons">
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="#">
+                            <p>React</p>
+                        </div>
+                        <p class="text-contents">触りだして1日。フロントエンドの実装によく使われるので勉強中。フロントで処理して動的に動かせる点が面白い。</p>
+                    </div>
+                <div class="lesson">
+                    <div class="lesson-icon">
+                        <img src="#">
+                        <p>Ruby on Rails</p>
+                    </div>
+                    <p class="text-contents">触りだして2週間くらい。フレームワークが便利すぎて、フレームワークなしでは生きられない身体に。</p>
+                </div>
+                <div class="lesson">
+                    <div class="lesson-icon">
+                        <img src="#">
+                        <p>SQLite</p>
+                    </div>
+                    <p class="text-contents">Railsの勉強してたらついてきたデータベース管理システム。軽量で扱いやすいらしいが、他を知らないので利便性を感じたことはない。フロントエンドがある程度できるようになってからMySQLの勉強を始める予定。</p>
+                </div>
+                <div class="lesson">
+                    <div class="lesson-icon">
+                        <img src="#">
+                        <p>GitHub</p>
+                    </div>
+                    <p class="text-contents">ソースコード管理。最近、リモートリポジトリの設定を学び、どこでも開発できるようになった。</p>
+                </div>
+            </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="message-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2></h2>
+                    <h3></h3>
+                </div>
+                <span class="btn message">HELLO!</span>
+                <p>押しても意味のないボタン</p>
+                <p><small>無限プチプチみたいに使ってね</small></p>
+            </div>
         </div>
         <footer>
-
+            <div class="container">
+                <img src="">
+                <p></p>
+            </div>
         </footer>
     </body>
 </html>
