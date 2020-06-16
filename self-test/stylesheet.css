@@ -24,9 +24,9 @@
   
   .top-wrapper {
     padding: 180px 0 100px 0;
-    background-image: url(top.png);
+    background-image: url(image/top.png);
     background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
   }
   
@@ -50,13 +50,12 @@
     margin-bottom: 20px;
   }
   
-  .signup {
-    background-color: #239b76;
+  .github {
+    background-color: gray;
   }
   
   .facebook {
     background-color: #3b5998;
-    margin-right: 10px;
   }
   
   .twitter {
@@ -83,7 +82,7 @@
   header {
     height: 65px;
     width: 100%;
-    background-color: rgba(34,49,52,0.9);
+    background-color: #2196f3;
     position :fixed;
     top: 0;
     z-index: 10;
@@ -153,9 +152,9 @@
   
   .lesson-icon p {
     position: absolute;
-    top: 37%;
+    top: 91%;
     width: 100%;
-    color: white;
+    color: black;
   }
   
   .text-contents {
