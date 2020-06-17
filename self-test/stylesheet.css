@@ -23,8 +23,8 @@
   }
   
   .top-wrapper {
-    padding: 180px 0 100px 0;
-    background-image: url(image/top.png);
+    padding: 300px 0 180px 0;
+    background-color: #90CAF9;
     background-size: cover;
     color: black;
     text-align: center;
@@ -32,7 +32,7 @@
   
   .top-wrapper h1 {
     opacity: 0.7;
-    font-size: 45px;
+    font-size: 50px;
     letter-spacing: 5px;
   }
   
@@ -42,6 +42,69 @@
     margin-bottom: 40px;
   }
   
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: #0D47A1;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255,255,255,0.3);
+  }
+  
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+  }
+  
+  .profile-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+
+  .profile-left {
+    float: left;
+    width: 50%;
+  }
+
+  .profile-right {
+    float: right;
+    width: 50%;
+    text-align: left;
+  }
+
   .btn-wrapper {
     text-align: center;
   }
@@ -78,52 +141,16 @@
   .fa {
     margin-right: 5px;
   }
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: #2196f3;
-    position :fixed;
-    top: 0;
-    z-index: 10;
+
+  .now-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #E3F2FD;
+    text-align: center;
   }
-  
-  .logo {
-    width: 124px;
-    margin-top: 20px;
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
-  .header-right {
-    float: right;
-    margin-right: -25px;
-  }
-  
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  .header-right a:hover {
-    background-color: rgba(255,255,255,0.3);
-  }
-  
-  .menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-  }
-  
-  .lesson-wrapper {
+
+  .mirai-wrapper {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
@@ -154,15 +181,15 @@
     position: absolute;
     top: 91%;
     width: 100%;
-    color: black;
+    color: rgb(73, 73, 250);
   }
   
   .text-contents {
     width: 80%;
     display: inline-block;
-    margin-top: 15px;
-    font-size: 13px;
-    color: #b3aeb5;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #77aab9;
   }
   
   .heading h3 {
@@ -173,6 +200,7 @@
     border-bottom: 1px solid #eee;
     padding-bottom: 80px;
     text-align: center;
+    background-color: #E3F2FD;
   }
   
   .message {
@@ -198,6 +226,7 @@
   }
   
   footer {
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 20px;
   }
@@ -220,7 +249,15 @@
       margin-bottom: 50px;
     }
   
-    .lesson-wrapper {
+    .profile-wrapper {
+      height: 990px;
+    }
+
+    .now-wrapper {
+      height: 990px;
+    }
+
+    .mirai-wrapper {
       height: 990px;
     }
   
@@ -272,7 +309,15 @@
       width: 100%;
     }
   
-    .lesson-wrapper {
+    .profile-wrapper {
+      height: 1700px;
+    }
+
+    .now-wrapper {
+      height: 1700px;
+    }
+
+    .mirai-wrapper {
       height: 1700px;
     }
   

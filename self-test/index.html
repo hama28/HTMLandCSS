@@ -11,15 +11,15 @@
         <header>
             <div class="container">
                 <div class="header-left">
-                    <img class="logo" src="#">
+                    <img class="logo" src="image/logo.png">
                 </div>
                 <span class="fa fa-bars menu-icon"></span>
                 <div class="header-right">
                     <a href="#">Top</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Now</a>
-                    <a href="#">Mirai</a>
-                    <a href="#">Contact</a>
+                    <a href="#Profile">Profile</a>
+                    <a href="#Now">Now</a>
+                    <a href="#Mirai">Mirai</a>
+                    <a href="#Contact">Contact</a>
                 </div>
             </div>
         </header>
@@ -27,17 +27,41 @@
             <div class="container">
                 <h1>HELLO 世界！</h1>
                 <p>自己紹介ページ</p>
-                <div class="btn-wrapper">
-                    <a href="#" class="btn github"><span class="fa fa-github"></span>GitHub</a>
-                    <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
-                    <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
+            </div>
+        </div>
+        <div class="profile-wrapper" id="Profile">
+            <div class="container">
+                <div class="heading">
+                    <h2>Profile</h2>
+                    <p>マイプロフィール</p>
+                </div>
+                <div class="lessons">
+                    <div class="profile-left">
+                        <div class="lesson-icon">
+                            <img src="image/profile.png">
+                            <p>hata</p>
+                        </div>
+                    </div>
+                    <div class="profile-right">
+                        <h3>hata</h3>
+                        <p>はじめまして、こんにちは。</p>
+                        <p>前職ではゲーム開発会社にて、Webページの運営・管理を行っていました。</p>
+                        <p>今はWebサービスの開発をしています。</p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn github"><span class="fa fa-github"></span>GitHub</a>
+                            <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebook</a>
+                            <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitter</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <div class="lesson-wrapper">
+        <div class="now-wrapper" id="Now">
             <div class="container">
                 <div class="heading">
-                    <h2>勉強中</h2>
+                    <h2>Now</h2>
+                    <p>現在勉強中のスキル</p>
                 </div>
                 <div class="lessons">
                     <div class="lesson">
@@ -47,74 +71,76 @@
                         </div>
                         <p class="text-contents">触りだして1日。フロントエンドの実装によく使われるので勉強中。フロントで処理して動的に動かせる点が面白い。SPAの開発をやってみたい。</p>
                     </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="image/ruby.png">
-                        <p>Ruby on Rails</p>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/ruby.png">
+                            <p>Ruby on Rails</p>
+                        </div>
+                        <p class="text-contents">触りだして2週間くらい。PythonやPHPと悩んだけど、実際に触ってみて一番書きやすかったRubyを選択。フレームワークが便利すぎて、フレームワークなしでは生きられない身体に。</p>
                     </div>
-                    <p class="text-contents">触りだして2週間くらい。フレームワークが便利すぎて、フレームワークなしでは生きられない身体に。</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="image/db.png">
-                        <p>SQLite</p>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/db.png">
+                            <p>SQLite</p>
+                        </div>
+                        <p class="text-contents">Railsの勉強してたらついてきたデータベース管理システム。軽量で扱いやすいらしいが、他を知らないので利便性を感じたことはない。フロントエンドがある程度できるようになってからMySQLの勉強を始める予定。</p>
                     </div>
-                    <p class="text-contents">Railsの勉強してたらついてきたデータベース管理システム。軽量で扱いやすいらしいが、他を知らないので利便性を感じたことはない。フロントエンドがある程度できるようになってからMySQLの勉強を始める予定。</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="image/github.png">
-                        <p>GitHub</p>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/github.png">
+                            <p>GitHub</p>
+                        </div>
+                        <p class="text-contents">ソースコード管理。最近、リモートリポジトリの設定を学び、どこでも開発できるようになった。複数人での開発の経験もしてみたい。</p>
                     </div>
-                    <p class="text-contents">ソースコード管理。最近、リモートリポジトリの設定を学び、どこでも開発できるようになった。</p>
                 </div>
-            </div>
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="lesson-wrapper">
+        <div class="mirai-wrapper" id="Mirai">
             <div class="container">
                 <div class="heading">
-                    <h2>未来</h2>
+                    <h2>Mirai</h2>
+                    <p>これから習得したいスキル</p>
                 </div>
                 <div class="lessons">
                     <div class="lesson">
                         <div class="lesson-icon">
-                            <img src="image/front.png">
-                            <p>AWS</p>
+                            <img src="image/cloud.png">
+                            <p>クラウド</p>
                         </div>
-                        <p class="text-contents">触りだして1日。フロントエンドの実装によく使われるので勉強中。フロントで処理して動的に動かせる点が面白い。</p>
+                        <p class="text-contents">AWSやGCPといったクラウドインフラ。今や常識になっているので、クラウドサーバでの開発を経験したい。フロントエンドとサーバサイドがある程度できるようになれば、AWSなどを使ってサービスのリリースを目指す。</p>
                     </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="image/ruby.png">
-                        <p>Docker</p>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/box.png">
+                            <p>Docker</p>
+                        </div>
+                        <p class="text-contents">コンテナ仮想化でよく聞くやつ。今のところさっぱり分からん。説明を聞いて便利なのは分かるが、体験してみないとなんとも…。クラウドでも使えるみたいなので、AWSなどと一緒に使ってみる。</p>
                     </div>
-                    <p class="text-contents">触りだして2週間くらい。フレームワークが便利すぎて、フレームワークなしでは生きられない身体に。</p>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/deeplearning.png">
+                            <p>人工知能</p>
+                        </div>
+                        <p class="text-contents">機械学習。最近よく見るLINEのチャットボットとかを作ってみたい。特に、自然言語処理が気になる。機械学習はPythonが強く、Rubyはライブラリが少ないのが残念…。Pythonの勉強もしたいがやりたいことが多すぎる。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/firebase.png">
+                            <p>Firebase</p>
+                        </div>
+                        <p class="text-contents">超高速でアプリの開発ができるプラットフォーム。調べれば調べるほど面白そうで、早く触ってみたい。Amazonが提供しているAmplifyも気になる。</p>
+                    </div>
                 </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="image/db.png">
-                        <p>サービス</p>
-                    </div>
-                    <p class="text-contents">Railsの勉強してたらついてきたデータベース管理システム。軽量で扱いやすいらしいが、他を知らないので利便性を感じたことはない。フロントエンドがある程度できるようになってからMySQLの勉強を始める予定。</p>
-                </div>
-                <div class="lesson">
-                    <div class="lesson-icon">
-                        <img src="image/github.png">
-                        <p>サービス</p>
-                    </div>
-                    <p class="text-contents">ソースコード管理。最近、リモートリポジトリの設定を学び、どこでも開発できるようになった。</p>
-                </div>
-            </div>
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="message-wrapper">
+        <div class="message-wrapper" id="Contact">
             <div class="container">
                 <div class="heading">
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Contact</h2>
+                    <h3>ご連絡お待ちしております。</h3>
+                    <img src="image/contact.png">
                 </div>
                 <span class="btn message">HELLO!</span>
                 <p>押しても意味のないボタン</p>
@@ -123,8 +149,8 @@
         </div>
         <footer>
             <div class="container">
-                <img src="#">
-                <p></p>
+                <img src="image/logo.png">
+                <p>Copyright © 2020 hata All Rights Reserved.</p>
             </div>
         </footer>
     </body>
