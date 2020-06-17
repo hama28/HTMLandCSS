@@ -179,17 +179,18 @@
   
   .lesson-icon p {
     position: absolute;
-    top: 91%;
+    top: 90%;
     width: 100%;
-    color: rgb(73, 73, 250);
+    color: #ee8711;
+    font-size: 20px;
   }
   
   .text-contents {
     width: 80%;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 15px;
-    color: #77aab9;
+    color: #1465cf;
   }
   
   .heading h3 {
@@ -244,21 +245,26 @@
   }
   
   @media all and (max-width: 1000px) {
+    .profile-wrapper .btn {
+      width: 90%;
+      margin-bottom: 7px;
+    }
+
     .lesson {
       width: 50%;
       margin-bottom: 50px;
     }
   
     .profile-wrapper {
-      height: 990px;
+      height: 800px;
     }
 
     .now-wrapper {
-      height: 990px;
+      height: 1200px;
     }
 
     .mirai-wrapper {
-      height: 990px;
+      height: 1200px;
     }
   
     footer {
@@ -288,7 +294,11 @@
     .top-wrapper .btn {
       width: 100%;
     }
-  
+
+    .facebook {
+      margin-top: 10px;
+    }
+
     .twitter {
       margin-top: 10px;
     }
@@ -314,11 +324,11 @@
     }
 
     .now-wrapper {
-      height: 1700px;
+      height: 2200px;
     }
 
     .mirai-wrapper {
-      height: 1700px;
+      height: 2200px;
     }
   
     .message-wrapper .btn {
