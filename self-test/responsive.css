@@ -1,6 +1,6 @@
 /* タブレット向けレイアウト */
 @media all and (max-width: 1200px) {
-    .lesson {
+    .area {
       width: 50%;
       margin-bottom: 50px;
     }
@@ -83,7 +83,7 @@
     margin-top: 10px;
   }
 
-  .lesson {
+  .area {
     width: 100%;
   }
 
@@ -102,6 +102,10 @@
 
   .profile-right .btn {
     width: 100%;
+  }
+
+  .github {
+    margin-top: 20px;
   }
 
   .like-wrapper {

@@ -92,7 +92,7 @@
   }
   
   .profile-wrapper {
-    padding-bottom: 80px;
+    padding-bottom: 150px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f7f7f7;
@@ -143,6 +143,22 @@
     opacity: 1;
   }
   
+  .like-wrapper img {
+    opacity: 0.8;
+  }
+
+  .now-wrapper img {
+    opacity: 0.8;
+  }
+
+  .mirai-wrapper img {
+    opacity: 0.8;
+  }
+
+  img:hover {
+    opacity: 1;
+  }
+
   .fa {
     margin-right: 5px;
   }
@@ -151,7 +167,7 @@
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #6ec6ff;
+    background-color: #daf0ff;
     text-align: center;
   }
 
@@ -167,7 +183,7 @@
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #6ec6ff;
+    background-color: #daf0ff;
     text-align: center;
   }
   
@@ -181,16 +197,16 @@
     font-weight: normal;
   }
   
-  .lesson {
+  .area {
     float: left;
     width: 25%;
   }
   
-  .lesson-icon {
+  .area-icon {
     position: relative;
   }
   
-  .lesson-icon p {
+  .area-icon p {
     position: absolute;
     top: 90%;
     width: 100%;
@@ -213,7 +229,7 @@
     border-bottom: 1px solid #eee;
     padding-bottom: 80px;
     text-align: center;
-    background-color: #E3F2FD;
+    background-color: #f7f7f7;
   }
   
   .message {
@@ -229,6 +245,10 @@
     box-shadow: none;
   }
   
+  footer {
+    background-color: #0D47A1;
+  }
+
   footer img {
     width: 125px;
   }
