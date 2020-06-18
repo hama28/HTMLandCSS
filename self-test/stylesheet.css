@@ -21,6 +21,10 @@
     padding: 0 15px;
     margin: 0 auto;
   }
+
+  .container h2 {
+    font-size: 40px;
+  }
   
   .top-wrapper {
     padding: 300px 0 180px 0;
@@ -142,11 +146,19 @@
     margin-right: 5px;
   }
 
+  .like-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #6ec6ff;
+    text-align: center;
+  }
+
   .now-wrapper {
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #E3F2FD;
+    background-color: #f7f7f7;
     text-align: center;
   }
 
@@ -154,7 +166,7 @@
     padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #f7f7f7;
+    background-color: #6ec6ff;
     text-align: center;
   }
   
@@ -244,94 +256,3 @@
     clear: left;
   }
   
-  @media all and (max-width: 1000px) {
-    .profile-wrapper .btn {
-      width: 90%;
-      margin-bottom: 7px;
-    }
-
-    .lesson {
-      width: 50%;
-      margin-bottom: 50px;
-    }
-  
-    .profile-wrapper {
-      height: 800px;
-    }
-
-    .now-wrapper {
-      height: 1200px;
-    }
-
-    .mirai-wrapper {
-      height: 1200px;
-    }
-  
-    footer {
-      text-align: center;
-    }
-  }
-  
-  @media all and (max-width: 750px) {
-    .top-wrapper h1 {
-      font-size: 32px;
-    }
-  
-    .heading h2 {
-      font-size: 20px;
-    }
-  }
-  
-  @media all and (max-width: 670px) {
-    .header-right {
-      display: none;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .top-wrapper .btn {
-      width: 100%;
-    }
-
-    .facebook {
-      margin-top: 10px;
-    }
-
-    .twitter {
-      margin-top: 10px;
-    }
-  
-    .top-wrapper {
-      text-align: left;
-    }
-  
-    .top-wrapper h1 {
-      font-size: 24px;
-    }
-  
-    .top-wrapper p {
-      font-size: 14px;
-    }
-  
-    .lesson {
-      width: 100%;
-    }
-  
-    .profile-wrapper {
-      height: 1700px;
-    }
-
-    .now-wrapper {
-      height: 2200px;
-    }
-
-    .mirai-wrapper {
-      height: 2200px;
-    }
-  
-    .message-wrapper .btn {
-      width: 100%;
-    }
-  }

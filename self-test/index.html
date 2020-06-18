@@ -3,21 +3,38 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="自己紹介のページです。">
         <title>自己紹介ページ</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
         <link rel="stylesheet" type="text/css" href="responsive.css">
+        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
     </head>
     <body>
         <header>
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span class="fa fa-bars menu-icon"></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#Profile">Profile</a></li>
+                        <li><a href="#Like">Like</a></li>
+                        <li><a href="#Now">Now</a></li>
+                        <li><a href="#Mirai">Mirai</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="container">
                 <div class="header-left">
                     <img class="logo" src="image/logo.png">
                 </div>
-                <span class="fa fa-bars menu-icon"></span>
                 <div class="header-right">
                     <a href="#">Top</a>
                     <a href="#Profile">Profile</a>
+                    <a href="#Like">Like</a>
                     <a href="#Now">Now</a>
                     <a href="#Mirai">Mirai</a>
                     <a href="#Contact">Contact</a>
@@ -46,7 +63,10 @@
                     <div class="profile-right">
                         <h3>hata</h3>
                         <p>はじめまして、こんにちは。</p>
-                        <p>前職ではゲーム開発会社にて、Webページの運営・管理を行っていました。</p>
+                        <p>前職ではゲーム開発会社にて、
+                        <a href="https://fecipher.jp/" target="blank">こんなサイト</a>や
+                        <a href="https://www.intsys.co.jp/works/FEexpo/" target="blank">こんなサイト</a>、
+                        こんなサイトの運営・管理を行っていました。</p>
                         <p>今はWebサービスの開発をしています。</p>
                         <div class="btn-wrapper">
                             <a href="#" class="btn github"><span class="fa fa-github"></span>GitHub</a>
@@ -56,6 +76,45 @@
                     </div>
                     <div class="clear"></div>
                 </div>
+            </div>
+        </div>
+        <div class="like-wrapper" id="Like">
+            <div class="container">
+                <div class="heading">
+                    <h2>Like</h2>
+                    <p>好きなものはボードゲーム</p>
+                </div>
+                <div class="lessons">
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/front.png">
+                            <p>Dixit</p>
+                        </div>
+                        <p class="text-contents">『1枚の絵は千の言葉に勝る』。このゲームのキャッチコピー。子供から大人まで誰でも楽しめる。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/ruby.png">
+                            <p>ブラックストーリーズ</p>
+                        </div>
+                        <p class="text-contents">シチュエーションパズル。水平思考推理ゲームとか、yes/noパズルとも言われる。頭が凝り固まってるなーって人におすすめ。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/db.png">
+                            <p>ツンダール</p>
+                        </div>
+                        <p class="text-contents">シンプル。簡単なルールで、すぐに遊べる。運の要素も強いので、経験に関係なく遊べる。持ち運びやすい点もグッド。</p>
+                    </div>
+                    <div class="lesson">
+                        <div class="lesson-icon">
+                            <img src="image/github.png">
+                            <p>BGA</p>
+                        </div>
+                        <p class="text-contents">ボードゲームアリーナ。オンラインでボードゲームが遊べる神サービス。StayHomeの影響でサーバがパンクするほど海外では人気。英語ができなくても楽しめるが、できるとより楽しめる。</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
         <div class="now-wrapper" id="Now">
@@ -154,5 +213,12 @@
                 <p>Copyright © 2020 hata All Rights Reserved.</p>
             </div>
         </footer>
+    <script>
+        $(function() {
+            $('#nav-content li a').on('click', function(event) {
+                $('#nav-input').prop('checked', false);
+            });
+        });
+    </script>
     </body>
 </html>
