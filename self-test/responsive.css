@@ -88,11 +88,12 @@
   }
 
   .profile-wrapper {
-    height: 1000px;
+    height: 1200px;
   }
 
   .profile-left {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .profile-right {
