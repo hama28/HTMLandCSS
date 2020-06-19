@@ -185,6 +185,14 @@
     background-color: #daf0ff;
     text-align: center;
   }
+
+  .goal-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #daf0ff;
+    text-align: center;
+  }
   
   .heading {
     padding-top: 50px;
@@ -233,11 +241,15 @@
     background-color: #f7f7f7;
   }
   
+  .message-wrapper .heading {
+    margin-bottom: 100px;
+  }
+
   .message {
     padding: 15px 40px;
-    background-color: #5dca88;
+    background-color: #5d89ca;
     cursor: pointer;
-    box-shadow: 0px 7px #1a7940;
+    box-shadow: 0px 7px #1a4079;
   }
   
   .message:active {

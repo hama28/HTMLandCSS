@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="「こんなWebサイトを作ってみたい」といった目標を掲げたページです。">
+        <title>目標掲載ページ</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="responsive.css">
+        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+    </head>
+    <body>
+        <style>
+            .top-wrapper {background-color: rgb(247, 205, 92);} 
+            .message {color: black; background-color: rgb(247, 205, 92); box-shadow: 0px 7px #eb781a;}
+        </style>
+        <header>
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span class="fa fa-bars menu-icon"></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul>
+                        <li><a href="#">Top</a></li>
+                        <li><a href="#Goal">Goal</a></li>
+                        <li><a href="#Path">Path</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="header-left">
+                    <a href="index.html"><img class="logo" src="image/logo.png"></a>
+                </div>
+                <div class="header-right">
+                    <a href="#">Top</a>
+                    <a href="#Goal">Goal</a>
+                    <a href="#Path">Path</a>
+                    <a href="#Contact">Contact</a>
+                </div>
+            </div>
+        </header>
+        <div class="top-wrapper">
+            <div class="container">
+                <h1>こんなWebサイトを作りたい！！</h1>
+                <p>目標掲載ページ</p>
+            </div>
+        </div>
+        <div class="goal-wrapper" id="Goal">
+            <div class="container">
+                <div class="heading">
+                    <h2>目標</h2>
+                    <p>下記のようなWebページを作ってみたい<br>
+                        特に、SPAのWebページを作ってみたいので、Reactを勉強中</p>
+                </div>
+                <div class="areas">
+                    <div class="area">
+                        <div class="area-icon">
+                            <a href="https://meijisakaba.jp/" target="blank"><img src="image/goal/goal1.png"></a>
+                            <p>岡崎明治酒場</p>
+                        </div>
+                        <p class="text-contents">デザインがかっこいい。スクロールしたときの読み込みモーションがかっこいい。</p>
+                    </div>
+                    <div class="area">
+                        <div class="area-icon">
+                            <a href="https://www.getobachan.com/" target="blank"><img src="image/goal/goal2.png"></a>
+                            <p>Get Obachan</p>
+                        </div>
+                        <p class="text-contents">ECサイト系のSPA。ページ変遷がスムーズで、SPAにありがちな動作の重さを感じさせない。</p>
+                    </div>
+                    <div class="area">
+                        <div class="area-icon">
+                            <a href="https://yuto-takahashi.com/" target="blank"><img src="image/goal/goal3.png"></a>
+                            <p>Yuto Takahashi</p>
+                        </div>
+                        <p class="text-contents">Yuto Takahashiさんのポートフォリオサイト。</p>
+                    </div>
+                    <div class="area">
+                        <div class="area-icon">
+                            <a href="https://spatzek.studio/" target="blank"><img src="image/goal/goal4.png"></a>
+                            <p>Spatzek Studio</p>
+                        </div>
+                        <p class="text-contents">アニメーションがすごい。Webサイトの世界観を作り出している。</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="path-wrapper" id="Path">
+            <div class="container">
+                <div class="heading">
+                    <h2>今後の私</h2>
+                    <p>ああして、こうして、あれして、これして</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="message-wrapper" id="Contact">
+            <div class="container">
+                <div class="heading">
+                    <h2>Contact</h2>
+                    <h3>ご連絡お待ちしております。</h3>
+                    <img src="image/contact.png">
+                </div>
+                <a href="/portfolio/index.html"><span class="btn message">ポートフォリオサイト</span></a>
+                <p>ポートフォリオサイトへ移動します</p>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <a href="index.html"><img src="image/logo.png"></a>
+                <p>Copyright © 2020 hata All Rights Reserved.</p>
+            </div>
+        </footer>
+    <script>
+        $(function() {
+            $('#nav-content li a').on('click', function(event) {
+                $('#nav-input').prop('checked', false);
+            });
+        });
+    </script>
+    </body>
+</html>
