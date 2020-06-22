@@ -6,9 +6,11 @@
         <meta name="description" content="「こんなWebサイトを作ってみたい」といった目標を掲げたページです。">
         <title>目標掲載ページ</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="responsive.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/anime.min.js"></script>
     </head>
     <body>
         <style>
@@ -117,6 +119,14 @@
         $(function() {
             $('#nav-content li a').on('click', function(event) {
                 $('#nav-input').prop('checked', false);
+            });
+            $('a[href^="#"]').click(function() {
+                var speed = 400;
+                var href= $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top;
+                $('body,html').animate({scrollTop:position}, speed, 'swing');
+                return false;
             });
         });
     </script>

@@ -18,4 +18,19 @@ $.fn.thumbnail = function(baseURL){
 $(function(){
     $("body").append("<img src='' id='jqThumbnail' width='320' height='240' style='position:absolute;display:none'>");
     $("a.thumb").thumbnail();
+
+    // #で始まるリンクをクリックしたら実行
+    $('a[href^="#"]').click(function() {
+        var speed = 400;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
+
+    // クリックされたらcheckedを外す
+    $('#nav-content li a').on('click', function(event) {
+        $('#nav-input').prop('checked', false);
+    });
 });

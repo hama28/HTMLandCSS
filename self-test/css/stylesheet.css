@@ -142,20 +142,21 @@
     opacity: 1;
   }
   
-  .like-wrapper img {
+
+  .like-wrapper img:hover {
     opacity: 0.8;
   }
 
-  .now-wrapper img {
+  .now-wrapper img:hover {
     opacity: 0.8;
   }
 
-  .mirai-wrapper img {
+  .mirai-wrapper img:hover {
     opacity: 0.8;
   }
 
-  img:hover {
-    opacity: 1;
+  .goal-wrapper img:hover {
+    opacity: 0.8;
   }
 
   .fa {

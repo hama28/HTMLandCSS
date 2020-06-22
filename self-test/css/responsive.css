@@ -19,7 +19,7 @@
     }
   
     .profile-wrapper {
-      height: 800px;
+      height: 900px;
     }
 
     .now-wrapper {
@@ -113,11 +113,11 @@
   }
 
   .now-wrapper {
-    height: 2200px;
+    height: 2300px;
   }
 
   .mirai-wrapper {
-    height: 2200px;
+    height: 2300px;
   }
 
   .message-wrapper .btn {
