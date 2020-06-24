@@ -4,7 +4,16 @@
   
   body {
     margin: 0;
-    font-family:  游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-family: '游ゴシック', 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro',  メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    transition: all 1s;
+  }
+
+  h1 {
+    font-family: 'M+ P Type-1 (basic latin) Black';
+  }
+
+  h2 {
+    font-family: 'M+ P Type-1 (basic latin) Black';
   }
   
   a {
@@ -24,6 +33,7 @@
 
   .container h2 {
     font-size: 40px;
+    letter-spacing: 10px;
   }
   
   .top-wrapper {
@@ -37,7 +47,7 @@
   .top-wrapper h1 {
     opacity: 0.7;
     font-size: 50px;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
   }
   
   .top-wrapper p {
@@ -91,7 +101,7 @@
   }
   
   .profile-wrapper {
-    padding-bottom: 150px;
+    padding-bottom: 300px;
     padding-left: 5%;
     padding-right: 5%;
     background-color: #f7f7f7;
@@ -99,6 +109,7 @@
   }
 
   .profile-left {
+    padding-top: 100px;
     float: left;
     width: 50%;
   }
@@ -111,6 +122,7 @@
 
   .btn-wrapper {
     text-align: center;
+    margin-top: 30px;
   }
   
   .btn-wrapper p {
@@ -194,6 +206,14 @@
     background-color: #daf0ff;
     text-align: center;
   }
+
+  .path-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #fff0ad;
+    text-align: center;
+  }
   
   .heading {
     padding-top: 50px;
@@ -259,6 +279,10 @@
     box-shadow: none;
   }
   
+  button {
+    border: none;
+  }
+
   footer {
     background-color: #0D47A1;
   }
@@ -290,3 +314,30 @@
     clear: left;
   }
   
+/* ここからanime */
+  .bodyfadeout {
+    opacity: 0;
+  }
+
+  #cover {
+    width: 0;
+    height: 10000px;
+    background-image: url("/image/cover.png");
+    background-color: black;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .anime5 {
+    animation: animemove5 0.7s linear forwards;
+  }
+
+  @keyframes animemove5 {
+    0% {}
+    100% {
+        width: 100%;
+    }
+  }
