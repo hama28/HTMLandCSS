@@ -48,7 +48,10 @@
         <div class="top-wrapper">
             <div class="container">
                 <h1>HELLO 世界！</h1>
-                <p>自己紹介ページ</p>
+                <p>コンセプトはフラット＆レスポンシブ<br>
+                どんな人が見ても、どんな環境で見ても<br>
+                「見やすい」を目指して作りました
+                </p>
             </div>
         </div>
         <div class="profile-wrapper" id="Profile">
@@ -92,7 +95,8 @@
             <div class="container">
                 <div class="heading">
                     <h2>Like</h2>
-                    <p>好きなものは「ボードゲーム」</p>
+                    <p>好きなものは「ボードゲーム」<br>
+                    オススメ４選</p>
                 </div>
                 <div class="areas">
                     <div class="area">
@@ -170,7 +174,7 @@
             <div class="container">
                 <div class="heading">
                     <h2>Mirai</h2>
-                    <p>これから習得したいスキル</p>
+                    <p>これから習得していくスキル</p>
                 </div>
                 <div class="areas">
                     <div class="area">
@@ -209,11 +213,32 @@
             <div class="container">
                 <div class="heading">
                     <h2>Contact</h2>
-                    <h3>ご連絡お待ちしております。</h3>
-                    <img src="image/contact.png">
+                    <h3>このWebサイトについて、私について、サイトの感想など、<br>
+                        なにかコメントがありましたら下記のフォームをご利用ください。</h3>
+                    <form action="fake.php" method="post">
+                        <div class="form-left">
+                        <label class="label" for="name">名前</label>
+                        <input id="name" type="text" name="name">
+                        <label class="label" for="email">メールアドレス</label>
+                        <input id="email" type="email" name="email">
+                        </div>
+                        <div class="form-right">
+                        <label class="label" for="message">メッセージ</label>
+                        <textarea id="message" name="comment"></textarea>
+                        </div>
+                        <div class="clear"></div>
+                        <input type="submit" value="送信" class="send-form">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>ページリンク</h2>
                 </div>
                 <div id="cover"></div>
-                <button class="btn message" id="button1">目標ページ</button>
+                <button class="btn page-move" id="button1">目標ページ</button>
                 <p>目標掲載ページへ移動します</p>
             </div>
         </div>
