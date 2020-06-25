@@ -1,144 +1,176 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="ポートフォリオサイトです。">
-        <title>ポートフォリオ(作品紹介)ページ || 畑の自己紹介サイト</title>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="../css/portfolio-style.css">
-        <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="../css/responsive.css">
-        <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
-        <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css">
-        <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
-        <script type="text/javascript" src="../js/script.js"></script>
-        <script type="text/javascript" src="../js/anime.min.js"></script>
-    </head>
-    <body>
-        <style>
-            .top-wrapper {background-color: rgb(170, 170, 170);} 
-            .page-move {color: black; background-color: rgb(141, 141, 141); box-shadow: 0px 7px #696969;}
-            .send-form {color:black; background: rgb(255, 255, 255);}
-            .message-wrapper {background-color: #d8d6d6;}
-        </style>
-        <header>
-            <div id="nav-drawer">
-                <input id="nav-input" type="checkbox" class="nav-unshown">
-                <label id="nav-open" for="nav-input"><span class="fa fa-bars menu-icon"></span></label>
-                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-                <div id="nav-content">
-                    <ul>
-                        <li><a href="#">Top</a></li>
-                        <li><a href="#Portfolio">Portfolio</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="header-left">
-                    <img class="logo" src="../image/logo.png">
-                </div>
-                <div class="header-right">
-                    <a href="#">Top</a>
-                    <a href="#Portfolio">Portfolio</a>
-                    <a href="#Contact">Contact</a>
-                </div>
-            </div>
-        </header>
-        <div class="top-wrapper">
-            <div class="container">
-                <h1>ポートフォリオページ</h1>
-                <p>ポートフォリオはまだない<br>
-                ただのしかばねのようだ</p>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ポートフォリオサイトです。" />
+    <title>ポートフォリオ(作品紹介)ページ || 畑の自己紹介サイト</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/portfolio-style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://mplus-fonts.sourceforge.jp/webfonts/general-j/mplus_webfonts.css"
+    />
+    <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/anime.min.js"></script>
+  </head>
+  <body>
+    <style>
+      .top-wrapper {
+        background-color: rgb(170, 170, 170);
+      }
+      .page-move {
+        color: black;
+        background-color: rgb(141, 141, 141);
+        box-shadow: 0px 7px #696969;
+      }
+      .send-form {
+        color: black;
+        background: rgb(255, 255, 255);
+      }
+      .message-wrapper {
+        background-color: #d8d6d6;
+      }
+    </style>
+    <header>
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown" />
+        <label id="nav-open" for="nav-input"
+          ><span class="fa fa-bars menu-icon"></span
+        ></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content">
+          <ul>
+            <li><a href="#">Top</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="portfolio-wrapper" id="Portfolio">
-            <div class="container">
-                <div class="heading">
-                    <h2>作品紹介</h2>
-                    <p></p>
-                </div>
-                <div class="areas">
-                    <div class="area">
-                        <div class="area-icon">
-                            <a href="dummy.html" target="blank"><img src="../image/portfolio/dummy.png"></a>
-                            <p>ダミー</p>
-                        </div>
-                        <p class="text-contents">ただのコピペ。</p>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
+      </div>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="../image/logo.png" />
         </div>
-        <div class="message-wrapper" id="Contact">
-            <div class="container">
-                <div class="heading">
-                    <h2>Contact</h2>
-                    <h3>このWebサイトについて、私について、サイトの感想など、<br>
-                        なにかコメントがありましたら下記のフォームをご利用ください。</h3>
-                    <form action="fake.php" method="post">
-                        <div class="form-left">
-                        <label class="label" for="name">名前</label>
-                        <input id="name" type="text" name="name">
-                        <label class="label" for="email">メールアドレス</label>
-                        <input id="email" type="email" name="email">
-                        </div>
-                        <div class="form-right">
-                        <label class="label" for="message">メッセージ</label>
-                        <textarea id="message" name="comment"></textarea>
-                        </div>
-                        <div class="clear"></div>
-                        <input type="submit" value="送信" class="send-form">
-                    </form>
-                </div>
-            </div>
+        <div class="header-right">
+          <a href="#">Top</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Contact">Contact</a>
         </div>
-        <div class="page-wrapper">
-            <div class="container">
-                <div class="heading">
-                    <h2>ページリンク</h2>
-                </div>
-                <div id="cover"></div>
-                <button class="btn page-move" id="button1">自己紹介ページ</button>
-                <button class="btn page-move" id="button2">目標掲載ページ</button>
-            </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>ポートフォリオページ</h1>
+        <p>
+          ポートフォリオはまだない<br />
+          ただのしかばねのようだ
+        </p>
+      </div>
+    </div>
+    <div class="portfolio-wrapper" id="Portfolio">
+      <div class="container">
+        <div class="heading">
+          <h2>作品紹介</h2>
+          <p></p>
         </div>
-        <footer>
-            <div class="container">
-                <a href="../index.html"><img src="../image/logo.png"></a>
-                <p>Copyright © 2020 hata All Rights Reserved.</p>
+        <div class="areas">
+          <div class="area">
+            <div class="area-icon">
+              <a href="dummy.html" target="blank"
+                ><img src="../image/portfolio/dummy.png"
+              /></a>
+              <p>ダミー</p>
             </div>
-        </footer>
-        <script>
-            const body = document.getElementsByTagName('body')[0];
-            function fadeOut() {
-                body.classList.add('bodyfadeout');
-            }
-            function fadeIn() {
-                location.href = '../index.html'
-            }
-            var bt5 = document.getElementById('button1');
-            var a = document.getElementById('cover');
-            bt5.addEventListener('click', function() {
-                a.classList.add('anime5');
-                setTimeout(fadeOut, 1200);
-                setTimeout(fadeIn, 1500);
-            });
+            <p class="text-contents">ただのコピペ。</p>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="message-wrapper" id="Contact">
+      <div class="container">
+        <div class="heading">
+          <h2>Contact</h2>
+          <h3>
+            このWebサイトについて、私について、サイトの感想など、<br />
+            なにかコメントがありましたら下記のフォームをご利用ください。
+          </h3>
+          <form action="fake.php" method="post">
+            <div class="form-left">
+              <label class="label" for="name">名前</label>
+              <input id="name" type="text" name="name" />
+              <label class="label" for="email">メールアドレス</label>
+              <input id="email" type="email" name="email" />
+            </div>
+            <div class="form-right">
+              <label class="label" for="message">メッセージ</label>
+              <textarea id="message" name="comment"></textarea>
+            </div>
+            <div class="clear"></div>
+            <input type="submit" value="送信" class="send-form" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="page-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>ページリンク</h2>
+        </div>
+        <div id="cover"></div>
+        <button class="btn page-move" id="button1">自己紹介ページ</button>
+        <button class="btn page-move" id="button2">目標掲載ページ</button>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <a href="../index.html"><img src="../image/logo.png" /></a>
+        <p>Copyright © 2020 hata All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const body = document.getElementsByTagName("body")[0];
+      function fadeOut() {
+        body.classList.add("bodyfadeout");
+      }
+      function fadeIn() {
+        location.href = "../index.html";
+      }
+      var bt5 = document.getElementById("button1");
+      var a = document.getElementById("cover");
+      bt5.addEventListener("click", function () {
+        a.classList.add("anime5");
+        setTimeout(fadeOut, 1200);
+        setTimeout(fadeIn, 1500);
+      });
 
-            function fadeOuto() {
-                body.classList.add('bodyfadeout');
-            }
-            function fadeInn() {
-                location.href = '../goal.html'
-            }
-            var bt6 = document.getElementById('button2');
-            var a = document.getElementById('cover');
-            bt6.addEventListener('click', function() {
-                a.classList.add('anime5');
-                setTimeout(fadeOuto, 1200);
-                setTimeout(fadeInn, 1500);
-            });
-        </script>
-    </body>
+      function fadeOuto() {
+        body.classList.add("bodyfadeout");
+      }
+      function fadeInn() {
+        location.href = "../goal.html";
+      }
+      var bt6 = document.getElementById("button2");
+      var a = document.getElementById("cover");
+      bt6.addEventListener("click", function () {
+        a.classList.add("anime5");
+        setTimeout(fadeOuto, 1200);
+        setTimeout(fadeInn, 1500);
+      });
+    </script>
+  </body>
 </html>
