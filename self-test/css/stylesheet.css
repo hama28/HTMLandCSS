@@ -419,7 +419,7 @@
 
   #cover {
     width: 0;
-    height: 1000%;
+    height: 2000%;
     background-image: url("../image/cover.png");
     background-color: black;
     border: none;
