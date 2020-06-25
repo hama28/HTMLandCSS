@@ -33,6 +33,23 @@
     .mirai-wrapper {
       height: 1200px;
     }
+
+    .path-wrapper {
+      height: 2000px;
+    }
+
+    .path-wrapper .text-contents {
+      font-size: 20px;
+    }
+
+    .path-wrapper p {
+      font-size: 16px;
+      margin-right: 10%;
+    }
+
+    .path-left {
+      padding-left: 10px;
+    }
   
     .form-left {
       float: left;
@@ -146,6 +163,31 @@
   .message-wrapper .btn {
     width: 100%;
   }
+
+  .path-wrapper {
+    height: 3100px;
+    background-repeat: repeat;
+  }
+
+  .path {
+    padding-bottom: 10px;
+  }
+
+  .path-left {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .path-right {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .path-right .text-contents {
+    margin-top: 10px;
+  }
+
 
   .form-left {
     float: left;
