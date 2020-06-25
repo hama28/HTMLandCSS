@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="ポートフォリオサイトです。">
-        <title>ポートフォリオ(作品紹介)ページ</title>
+        <title>ポートフォリオ(作品紹介)ページ || 畑の自己紹介サイト</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../css/portfolio-style.css">
         <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="../css/responsive.css">
         <link rel="stylesheet" type="text/css" href="http://mplus-fonts.sourceforge.jp/webfonts/basic_latin/mplus_webfonts.css">
@@ -16,8 +17,10 @@
     </head>
     <body>
         <style>
-            .top-wrapper {background-color: rgb(247, 92, 92);} 
-            .message {color: black; background-color: rgb(247, 92, 92); box-shadow: 0px 7px #eb1a1a;}
+            .top-wrapper {background-color: rgb(170, 170, 170);} 
+            .page-move {color: black; background-color: rgb(141, 141, 141); box-shadow: 0px 7px #696969;}
+            .send-form {color:black; background: rgb(218, 218, 218);}
+            .message-wrapper {background-color: #d8d6d6;}
         </style>
         <header>
             <div id="nav-drawer">
@@ -27,7 +30,7 @@
                 <div id="nav-content">
                     <ul>
                         <li><a href="#">Top</a></li>
-                        <li><a href="#Profile">Portfolio</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </div>
@@ -38,23 +41,66 @@
                 </div>
                 <div class="header-right">
                     <a href="#">Top</a>
-                    <a href="#Profile">Portfolio</a>
+                    <a href="#Portfolio">Portfolio</a>
                     <a href="#Contact">Contact</a>
                 </div>
             </div>
         </header>
-        <h1>ポートフォリオはまだない<br>
-            ただのしかばねのようだ</h1>
-            <p>どんなデザインにしようかな<br>
-            悩み中</p>
-            <img src="../image/portfolio/no-image1.png">
-            <img src="../image/portfolio/no-image2.png">
-            <img src="../image/portfolio/no-image3.png">
-
+        <div class="top-wrapper">
+            <div class="container">
+                <h1>ポートフォリオページ</h1>
+                <p>ポートフォリオはまだない<br>
+                ただのしかばねのようだ</p>
+            </div>
+        </div>
+        <div class="portfolio-wrapper" id="Portfolio">
+            <div class="container">
+                <div class="heading">
+                    <h2>作品紹介</h2>
+                    <p></p>
+                </div>
+                <div class="areas">
+                    <div class="area">
+                        <div class="area-icon">
+                            <a href="dummy.html" target="blank"><img src="../image/portfolio/dummy.png"></a>
+                            <p>ダミー</p>
+                        </div>
+                        <p class="text-contents">ただのコピペ。</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
         <div class="message-wrapper" id="Contact">
             <div class="container">
+                <div class="heading">
+                    <h2>Contact</h2>
+                    <h3>このWebサイトについて、私について、サイトの感想など、<br>
+                        なにかコメントがありましたら下記のフォームをご利用ください。</h3>
+                    <form action="fake.php" method="post">
+                        <div class="form-left">
+                        <label class="label" for="name">名前</label>
+                        <input id="name" type="text" name="name">
+                        <label class="label" for="email">メールアドレス</label>
+                        <input id="email" type="email" name="email">
+                        </div>
+                        <div class="form-right">
+                        <label class="label" for="message">メッセージ</label>
+                        <textarea id="message" name="comment"></textarea>
+                        </div>
+                        <div class="clear"></div>
+                        <input type="submit" value="送信" class="send-form">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrapper">
+            <div class="container">
+                <div class="heading">
+                    <h2>ページリンク</h2>
+                </div>
                 <div id="cover"></div>
-                <button class="btn message" id="button1">自己紹介ページ</button>
+                <button class="btn page-move" id="button1">自己紹介ページ</button>
                 <p>自己紹介ページへ移動します</p>
             </div>
         </div>
