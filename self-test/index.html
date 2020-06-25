@@ -268,7 +268,7 @@
                 </div>
                 <div id="cover"></div>
                 <button class="btn page-move" id="button1">目標ページ</button>
-                <p>目標掲載ページへ移動します</p>
+                <button class="btn page-move" id="button2">ポートフォリオ</button>
             </div>
         </div>
         <footer>
@@ -292,6 +292,21 @@
                 setTimeout(fadeOut, 1200);
                 setTimeout(fadeIn, 1500);
             });
+
+            function fadeOuto() {
+                body.classList.add('bodyfadeout');
+            }
+            function fadeInn() {
+                location.href = './portfolio/index.html'
+            }
+            var bt6 = document.getElementById('button2');
+            var a = document.getElementById('cover');
+            bt6.addEventListener('click', function() {
+                a.classList.add('anime5');
+                setTimeout(fadeOuto, 1200);
+                setTimeout(fadeInn, 1500);
+            });
+
         </script>
     </body>
 </html>

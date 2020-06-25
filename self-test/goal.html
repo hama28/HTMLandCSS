@@ -205,8 +205,8 @@
                     <h2>ページリンク</h2>
                 </div>
                 <div id="cover"></div>
-                <button class="btn page-move" id="button1">ポートフォリオサイト</button>
-                <p>ポートフォリオサイトへ移動します</p>
+                <button class="btn page-move" id="button1">自己紹介ページ</button>
+                <button class="btn page-move" id="button2">ポートフォリオ</button>
             </div>
         </div>
         <footer>
@@ -221,7 +221,7 @@
                 body.classList.add('bodyfadeout');
             }
             function fadeIn() {
-                location.href = './portfolio/index.html'
+                location.href = './index.html'
             }
             var bt5 = document.getElementById('button1');
             var a = document.getElementById('cover');
@@ -229,6 +229,20 @@
                 a.classList.add('anime5');
                 setTimeout(fadeOut, 1200);
                 setTimeout(fadeIn, 1500);
+            });
+
+            function fadeOuto() {
+                body.classList.add('bodyfadeout');
+            }
+            function fadeInn() {
+                location.href = './portfolio/index.html'
+            }
+            var bt6 = document.getElementById('button2');
+            var a = document.getElementById('cover');
+            bt6.addEventListener('click', function() {
+                a.classList.add('anime5');
+                setTimeout(fadeOuto, 1200);
+                setTimeout(fadeInn, 1500);
             });
         </script>
     </body>

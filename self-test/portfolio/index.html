@@ -19,7 +19,7 @@
         <style>
             .top-wrapper {background-color: rgb(170, 170, 170);} 
             .page-move {color: black; background-color: rgb(141, 141, 141); box-shadow: 0px 7px #696969;}
-            .send-form {color:black; background: rgb(218, 218, 218);}
+            .send-form {color:black; background: rgb(255, 255, 255);}
             .message-wrapper {background-color: #d8d6d6;}
         </style>
         <header>
@@ -101,7 +101,7 @@
                 </div>
                 <div id="cover"></div>
                 <button class="btn page-move" id="button1">自己紹介ページ</button>
-                <p>自己紹介ページへ移動します</p>
+                <button class="btn page-move" id="button2">目標掲載ページ</button>
             </div>
         </div>
         <footer>
@@ -124,6 +124,20 @@
                 a.classList.add('anime5');
                 setTimeout(fadeOut, 1200);
                 setTimeout(fadeIn, 1500);
+            });
+
+            function fadeOuto() {
+                body.classList.add('bodyfadeout');
+            }
+            function fadeInn() {
+                location.href = '../goal.html'
+            }
+            var bt6 = document.getElementById('button2');
+            var a = document.getElementById('cover');
+            bt6.addEventListener('click', function() {
+                a.classList.add('anime5');
+                setTimeout(fadeOuto, 1200);
+                setTimeout(fadeInn, 1500);
             });
         </script>
     </body>
