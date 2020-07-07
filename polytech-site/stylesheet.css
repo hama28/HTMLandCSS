@@ -4,11 +4,12 @@
         margin: 0;
         font: normal 75% 游ゴシック, Arial, Helvetica, sans-serif;
       }
+
       a {
         text-decoration: none;
       }
       .container {
-        max-width: 1000px;
+        max-width: 1200px;
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
@@ -23,9 +24,10 @@
       }
       
       .logo {
-          width: 300px;
-          height: 50px;
+        width: 300px;
+        height: 50px;
         margin-top: 10px;
+        padding: 0 20px;
       }
       
       .header-left {
@@ -48,6 +50,69 @@
       
       .header-right a:hover {
         background-color: #bfcbff;
+      }
+      
+      .top-image {
+          text-align: center;
+          max-width: 1200px;
+          width: 100%;
+          padding-top: 60px;
+          margin: 0 auto;
+      }
+
+      .main-menu {
+        max-width: 1200px;
+        height: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      .areas {
+          display: flex;
+          justify-content: center;
+      }
+
+      .area {
+        height: 500px;
+        width: 280px;
+        margin: 5px;
+        background-color: #dbdbdb;
+      }
+      
+      .area-icon {
+        position: relative;
+        padding: 20px;
+      }
+      
+      .area-icon p {
+        font-size: 20px;
+        font-weight: 700;
+        color: #3a3e42;
+        margin-top: 40px;
+        margin-bottom: 0px;
+      }
+      
+      .text-contents {
+        margin-top: 0;
+        width: 80%;
+        display: inline-block;
+        font-size: 15px;
+        color: #575c63;
+      }
+      
+      footer img {
+          width: 30%;
+      }
+
+      footer p {
+        color: #535353;
+        font-size: 16px;
+      }
+      
+      footer {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
       
 
@@ -94,7 +159,7 @@
         transition: all 0.5s;
       }
 
-    #btn1:hover,#btn2:hover,#btn3-1:hover,#btn3-2:hover,#btn3-3:hover,#btn4-1:hover,#btn4-2:hover,#btn4-3:hover,#btn4-4:hover,#btn4-5:hover {
+    #btn1:hover,#btn2:hover,#btn3-1:hover,#btn3-2:hover,#btn3-3:hover,#btn4-1:hover,#btn4-2:hover,#btn4-3:hover,#btn4-4:hover,#btn4-5:hover,#resbtn:hover {
         background-color: rgb(31, 54, 104);
     }
 
@@ -103,7 +168,8 @@
         flex-wrap: wrap;
     }
 
-    #btn3-1, #btn3-2, #btn3-3 {
+    #btn3-1, #btn3-2, #btn3-3,
+    #btn3-4, #btn3-5, #btn3-6 { 
         justify-content:flex-start;
         margin: 10px;
         padding: 10px;
@@ -134,7 +200,27 @@
         transition: all 0.5s;
     }
 
+    #btn5-1, #btn5-2, #btn5-3, #btn5-4, #btn5-5 {
+        justify-content:flex-start;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgb(109, 154, 252);
+        opacity: 1;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        transition: all 0.5s;
+    }
+
+
     #it-course {
+        display: none;
+        padding-top: 100px;
+        font-size: 40px;
+    }
+    
+    #iot-course {
         display: none;
         padding-top: 100px;
         font-size: 40px;
