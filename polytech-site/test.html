@@ -3,92 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>適正コースを見つけよう || ポリテクセンター京都</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <style>
-      /* ---- reset ---- */
-      body {
-        margin: 0;
-        font: normal 75% Arial, Helvetica, sans-serif;
-      }
-      .top-wrapper {
-        width: 100%;
-        position: fixed;
-        z-index: 10;
-      }
-      .top-wrapper h1 {
-        padding-top: 100px;
-        text-align: center;
-        font-size: 60px;
-        color: white;
-        opacity: 0.7;
-      }
-      .box-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        width: 1000px;
-        height: 600px;
-        background-color: white;
-        opacity: 0.7;
-      }
-      button {
-        background-color: turquoise;
-        opacity: 1;
-      }
-      /* ---- particles.js container ---- */
-      #particles-js {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: #2c2e43;
-        background-image: url("");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-      }
-      /* ---- stats.js ---- */
-      .count-particles {
-        background: #000022;
-        position: absolute;
-        top: 48px;
-        left: 0;
-        width: 80px;
-        color: #13e8e9;
-        font-size: 0.8em;
-        text-align: left;
-        text-indent: 4px;
-        line-height: 14px;
-        padding-bottom: 2px;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: bold;
-      }
-      .js-count-particles {
-        font-size: 1.1em;
-      }
-      #stats,
-      .count-particles {
-        -webkit-user-select: none;
-        margin-top: 5px;
-        margin-left: 5px;
-      }
-      #stats {
-        border-radius: 3px 3px 0 0;
-        overflow: hidden;
-      }
-      .count-particles {
-        border-radius: 0 0 3px 3px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
   <body>
+    <header>
+      <div class="container">
+          <div class="header-left">
+              <img class="logo" src="logo.gif">
+          </div>
+          <div class="header-right">
+              <a href="#">求職者の方へ</a>
+              <a href="#">在職者の方へ</a>
+              <a href="#">事業主の方へ</a>
+              <a href="#">利用者の声</a>
+              <a href="#">適正コース診断</a>
+          </div>
+      </div>
+  </header>
     <div class="top-wrapper">
-      <h1>適正コース</h1>
+      <h1>適正コースを見つけよう</h1>
       <div class="box-wrapper">
-        <button>目指す職業から選ぶ</button>
-        <button>取得できるスキルから選ぶ</button>
+        <div id="first-wrapper">
+          <button id="btn1">目指す職業から選ぶ</button>
+          <button id="btn2">取得するスキルから選ぶ</button>  
+        </div>
+        <div id="job-wrapper">
+          <button id="btn3-1">プログラマ</button>
+          <button id="btn3-2">システムエンジニア</button>
+          <button id="btn3-3">サーバエンジニア</button>
+        </div>
+        <div id="skill-wrapper">
+          <button id="btn4-1">Javaプログラミング</button>
+          <button id="btn4-2">データベース構築</button>
+          <button id="btn4-3">Andoroidアプリ開発</button>
+          <button id="btn4-4">Linuxサーバ構築</button>
+          <button id="btn4-5">ネットワーク構築</button>
+        </div>
+        <div id="it-course">
+          <p>あたなにオススメのコースは</p>
+          <a href="https://www3.jeed.or.jp/kyoto/poly/kyushoku/2020/_course_ITseisan_r2.html">
+            <h3>IT生産サポート科</h3>
+          </a>
+          <p>です</p>
+        </div>
+        <div id="restart">
+          <button id="resbtn">選び直す</button>
+        </div>
       </div>
     </div>
     <div id="particles-js"></div>
     <script src="particles2.js"></script>
+    <script src="test.js"></script>
   </body>
 </html>
