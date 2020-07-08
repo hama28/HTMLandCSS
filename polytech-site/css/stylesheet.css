@@ -1,7 +1,8 @@
 /* ---- reset ---- */
 body {
   margin: 0;
-  font: normal 75% 游ゴシック, Arial, Helvetica, sans-serif;
+  font: normal 100% 游ゴシック, Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
 }
 
 a {
@@ -48,7 +49,7 @@ header {
 }
 
 .header-right a:hover {
-  background-color: #bfcbff;
+  background-color: rgb(142, 219, 255);
 }
 
 .top-image {
@@ -58,30 +59,22 @@ header {
   padding-top: 60px;
   margin: 0 auto;
 }
-.slider {
-  margin: 100px auto;
-  width: 80%;
-}
-.slider img {
-  height: auto;
-  width: 100%;
-}
-/*slick setting*/
-.slick-prev:before,
-.slick-next:before {
-  color: #000;
+.slick-slide {
+  text-align: center;
+  color: #419be0;
+  background: white;
 }
 
 .main-menu {
   max-width: 1200px;
-  height: 700px;
+  height: 650px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 .areas {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .area {
@@ -89,6 +82,10 @@ header {
   width: 280px;
   margin: 5px;
   background-color: #dbdbdb;
+}
+
+.area:hover {
+  background-color: rgb(142, 219, 255);
 }
 
 .area-icon {
@@ -125,6 +122,7 @@ footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: rgb(221, 207, 189);
 }
 
 .top-wrapper {
@@ -139,31 +137,32 @@ footer {
   color: white;
   opacity: 0.9;
 }
+
 .box-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 900px;
   height: 600px;
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.8;
   border-radius: 10px;
   text-align: center;
 }
 
 #first-wrapper {
-  display: flex;
   justify-content: center;
 }
 
 #btn1,
 #btn2 {
-  margin-top: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px;
   width: 350px;
   height: 200px;
   border-radius: 30px;
-  background-color: rgb(109, 154, 252);
+  background-color: rgb(252, 161, 109);
   opacity: 1;
   font-size: 30px;
   font-weight: 700;
@@ -176,18 +175,36 @@ footer {
 #btn3-1:hover,
 #btn3-2:hover,
 #btn3-3:hover,
+#btn3-4:hover,
+#btn3-5:hover,
+#btn3-6:hover,
+#btn3-7:hover,
+#btn3-8:hover,
+#btn3-9:hover,
+#btn3-10:hover,
+#btn3-11:hover,
 #btn4-1:hover,
 #btn4-2:hover,
 #btn4-3:hover,
 #btn4-4:hover,
 #btn4-5:hover,
-#resbtn:hover {
-  background-color: rgb(31, 54, 104);
+#btn5-1:hover,
+#btn5-2:hover,
+#btn5-3:hover,
+#btn5-4:hover,
+#btn5-5:hover,
+#btn6-1:hover,
+#btn6-2:hover,
+#btn6-3:hover,
+#btn6-4:hover,
+#btn6-5:hover {
+  background-color: rgb(142, 219, 255);
 }
 
 #job-wrapper {
   display: none;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #btn3-1,
@@ -195,12 +212,18 @@ footer {
 #btn3-3,
 #btn3-4,
 #btn3-5,
-#btn3-6 {
-  justify-content: flex-start;
+#btn3-6,
+#btn3-7,
+#btn3-8,
+#btn3-9,
+#btn3-10,
+#btn3-11 {
   margin: 10px;
   padding: 10px;
+  width: 300px;
+  height: 50px;
   border-radius: 10px;
-  background-color: rgb(109, 154, 252);
+  background-color: rgb(252, 161, 109);
   opacity: 1;
   font-size: 20px;
   font-weight: 700;
@@ -211,6 +234,7 @@ footer {
 #skill-wrapper {
   display: none;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #btn4-1,
@@ -218,11 +242,12 @@ footer {
 #btn4-3,
 #btn4-4,
 #btn4-5 {
-  justify-content: flex-start;
   margin: 10px;
   padding: 10px;
+  width: 300px;
+  height: 50px;
   border-radius: 10px;
-  background-color: rgb(109, 154, 252);
+  background-color: rgb(252, 161, 109);
   opacity: 1;
   font-size: 20px;
   font-weight: 700;
@@ -235,11 +260,12 @@ footer {
 #btn5-3,
 #btn5-4,
 #btn5-5 {
-  justify-content: flex-start;
   margin: 10px;
   padding: 10px;
+  width: 300px;
+  height: 50px;
   border-radius: 10px;
-  background-color: rgb(109, 154, 252);
+  background-color: rgb(252, 161, 109);
   opacity: 1;
   font-size: 20px;
   font-weight: 700;
@@ -247,33 +273,81 @@ footer {
   transition: all 0.5s;
 }
 
+#btn6-1,
+#btn6-2,
+#btn6-3,
+#btn6-4,
+#btn6-5 {
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(252, 161, 109);
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  transition: all 0.5s;
+}
+
+
 #it-course {
   display: none;
-  padding-top: 100px;
   font-size: 40px;
+  font-weight: 800;
+  background-image: url(../img/kore1.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color:rgba(255, 255, 255, 0.7);
+  background-blend-mode:lighten;
+
 }
 
 #iot-course {
   display: none;
-  padding-top: 100px;
   font-size: 40px;
+  font-weight: 800;
+  background-image: url(../img/kore2.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color:rgba(255, 255, 255, 0.7);
+  background-blend-mode:lighten;
+
+}
+
+#auto-course {
+  display: none;
+  font-size: 40px;
+  font-weight: 800;
+  background-image: url(../img/kore3.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-color:rgba(255, 255, 255, 0.7);
+  background-blend-mode:lighten;
 }
 
 #restart {
   display: none;
   justify-content: center;
+  align-content: flex-end;
 }
 
 #resbtn {
+  align-items: flex-end;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
-  background-color: rgb(109, 154, 252);
+  background-color: rgb(65, 136, 59);
   opacity: 1;
   font-size: 20px;
   font-weight: 500;
   color: white;
   transition: all 0.5s;
+}
+
+#resbtn:hover {
+  background-color: rgb(255, 15, 15);
 }
 
 /* ---- particles.js container ---- */
